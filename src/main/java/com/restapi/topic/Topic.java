@@ -13,7 +13,7 @@ public class Topic {
     private String description;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "id", nullable = false)
+    @JoinColumn(name = "id", nullable = false, insertable =  false, updatable = false)
     private Course course;
 
     public String getId() {

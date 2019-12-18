@@ -14,6 +14,11 @@ public class CourseController {
 
 
     @RequestMapping("/courses")
+    public List<Course> getAllCourses() {
+        return courseService.getAllCourses();
+    }
+
+    @RequestMapping("/courses/{topic}")
     public List<Course> getAllCourses(@PathVariable String topic) {
         return courseService.getAllCourses(topic);
     }
@@ -22,6 +27,7 @@ public class CourseController {
     public Optional<Course> getCourse(@PathVariable String id) {
         return courseService.getCourse(id);
     }
+
     @RequestMapping(method = RequestMethod.POST, value = "/courses")
     public void addCourse(@RequestBody Course course) {
         courseService.addCourse(course);
