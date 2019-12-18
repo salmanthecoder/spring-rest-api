@@ -1,25 +1,47 @@
 package com.restapi;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import sun.management.ExtendedPlatformComponent;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class EmployeeController {
 
     @Autowired
     private EmployeeService employeeService;
-    @RequestMapping("/")
-    public List<Employee> getEmployee()
+    @RequestMapping("/employees")
+    public List<Employee> getAllEmployees()
     {
-        return employeeService.getEmployee();
+        return employeeService.getAllEmployees();
     }
-    @RequestMapping("/employee/add")
-    public void setEmployee()
+
+    @RequestMapping("/employees/{id}")
+    public Optional<Employee> getAllEmployee(@PathVariable String id)
     {
-        employeeService.addEmployee();
+        return employeeService.getEmployee(id);
     }
+
+
+    @RequestMapping(method = RequestMethod.POST, value = "/employees")
+    public void addEmployee(@RequestBody Employee employee)
+    {
+        employeeService.addEmployee(employee);
+    }
+
+    @RequestMapping(method = RequestMethod.PUT, value = "/employees")
+    public void updateEmployee(@RequestBody Employee employee)
+    {
+        employeeService.addEmployee(employee);
+    }
+
+    @RequestMapping(method = RequestMethod.DELETE, value = "/employees/{id}")
+    public void deleteEmployee(@PathVariable String id)
+    {
+        employeeService.deleteEmployee(id);
+    }
+
 }

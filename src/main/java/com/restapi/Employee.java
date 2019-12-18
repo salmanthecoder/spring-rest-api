@@ -1,6 +1,17 @@
 package com.restapi;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Employee {
+
+    @Id
+    private Integer id;
+    private String firstName;
+    private String lastName;
+    private String email;
+
     public Employee() {
     }
 
@@ -13,7 +24,7 @@ public class Employee {
     }
 
     public String getLastname() {
-        return lastname;
+        return lastName;
     }
 
     public String getEmail() {
@@ -28,24 +39,19 @@ public class Employee {
         this.firstName = firstName;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setLastname(String lastName) {
+        this.lastName = lastName;
     }
 
     public void setEmail(String email) {
         this.email = email;
     }
 
-    public Employee(Integer id, String firstName, String lastname, String email) {
+    public Employee(Integer id, String firstName, String lastName, String email) {
         this.id = id;
         this.firstName = firstName;
-        this.lastname = lastname;
+        this.lastName = lastName;
         this.email = email;
     }
-
-    private Integer id;
-    private String firstName;
-    private String lastname;
-    private String email;
 
 }
