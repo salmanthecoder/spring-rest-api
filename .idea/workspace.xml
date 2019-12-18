@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9d574867-7405-4d16-8aac-7757818059e6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/restapi/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/restapi/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/restapi/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/restapi/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/restapi/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/restapi/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/restapi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/restapi/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/rest-api-spring-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/rest-api-spring-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/rest-api-spring-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/rest-api-spring-1.0-SNAPSHOT.jar.original" afterDir="false" />
@@ -17,6 +14,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="restapispring" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,7 +36,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/restapi/topic" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/restapi/topic" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -70,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1576612173477</updated>
       <workItem from="1576612178043" duration="4757000" />
-      <workItem from="1576661834351" duration="4651000" />
+      <workItem from="1576661834351" duration="11120000" />
     </task>
     <servers />
   </component>
